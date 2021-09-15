@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Add a gray background color with some padding */
@@ -24,7 +24,7 @@ body {
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 75%;
 }
@@ -36,17 +36,20 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
-.img {
-  width: 100%;
-  padding: 20px;
+.linkimg {
+  width: 20vw;
 }
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.right {
+  text-align: right;
 }
 
 /* Clear floats after the columns */
@@ -66,7 +69,8 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn,
+  .rightcolumn {
     width: 100%;
     padding: 0;
   }
