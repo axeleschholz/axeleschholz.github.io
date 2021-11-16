@@ -40,6 +40,10 @@ body {
   width: 20vw;
 }
 
+.img {
+  width: 100%;
+}
+
 /* Add a card effect for articles */
 .card {
   background-color: white;
