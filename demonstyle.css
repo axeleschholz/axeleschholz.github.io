@@ -1,10 +1,21 @@
 body {
-  background-image: url("photos/darkheaven.jpg");
+  background-image: url("photos/matrix.gif");
 }
 
-titleText {
-  color: rgb(124, 3, 3);
-  font-size: 100px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
+.card {
+  background-color: black;
+  color: green;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid green;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
