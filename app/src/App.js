@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import About from "./components/About.js";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Welcome to my react app!</p>
       </header>
+      <body className="App-body">
+        <About />
+      </body>
     </div>
   );
 }
