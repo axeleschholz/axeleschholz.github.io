@@ -1,23 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { css, ThemeProvider } from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import { css, ThemeProvider } from "styled-components";
 
 /*
  * const ExampleStyledComponent = styled.div`
  *   color: ${(props) => props.theme.colors.orange};
  * `;
  */
-const black = '#000000';
-const white = '#ffffff';
-const lighterGray = '#F8f8f8';
-const lightGray = '#f5f5f5';
-const mediumGray = '#E7E7E7';
-const darkGray = '#797979';
-const darkerGray = '#5a5a5a';
-const orange = '#ff5f00';
-const brown = '#676157';
-const darkBrown = '#59544B';
-const lightBrown = '#84827D';
+const black = "#000F08";
+const white = "#ffffff";
+const lighterGray = "#F8f8f8";
+const lightGray = "#f5f5f5";
+const mediumGray = "#E7E7E7";
+const darkGray = "#797979";
+const darkerGray = "#5a5a5a";
+const orange = "#ff5f00";
+const darkRed = "#481620";
+const brown = "#54342B";
+const darkBrown = "#321F19";
+const lightBrown = "#704A2E";
 
 /*
  * const ExampleStyledComponent = styled.div`
@@ -25,11 +26,11 @@ const lightBrown = '#84827D';
  * `;
  */
 const sizes = [
-  { name: 'xl', size: '75em' },
-  { name: 'large', size: '60em' },
-  { name: 'medium', size: '45em' },
-  { name: 'small', size: '30em' },
-  { name: 'default', size: '0px' },
+  { name: "xl", size: "75em" },
+  { name: "large", size: "60em" },
+  { name: "medium", size: "45em" },
+  { name: "small", size: "30em" },
+  { name: "default", size: "0px" },
 ];
 
 const accumulator = (prevAccumulated, val) => {
@@ -58,6 +59,7 @@ const theme = {
     darkGrey: darkGray,
     darkerGray,
     darkerGrey: darkerGray,
+    darkRed,
     brown,
     darkBrown,
     lightBrown,

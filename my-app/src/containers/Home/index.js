@@ -1,31 +1,38 @@
 import React from "react";
 import styled from "styled-components";
-import NavBar from "../../components/NavBar";
-import { ThemeProvider } from "styled-components";
+import book_backdrop from "../../images/book_backdrop.jpg";
 
 const Wrapper = styled.div`
-  background-color: #bbb;
+  background-image: url(${book_backdrop});
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
   width: 100%;
   min-height: 100vh;
 `;
 // Remember to implement the theme provider in the state system
+const Content = styled.div`
+  margin-top: 2em;
+`;
+
 const ContentCard = styled.div`
-  width: 25em;
+  width: 40vw;
   margin: auto;
-  margin-top: 3em;
   padding: 3em;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.white};
   border-radius: 1em;
-  border: 0.01em solid #222;
+  border: 0.01em solid ${(props) => props.theme.colors.black};
 `;
 
 function Home() {
   return (
     <Wrapper>
-      <NavBar />
-      <ContentCard>
-        Hello, this app is currently under construction, please come back later!
-      </ContentCard>
+      <Content>
+        <ContentCard>
+          Hello, this app is currently under construction, please come back
+          later!
+        </ContentCard>
+      </Content>
     </Wrapper>
   );
 }

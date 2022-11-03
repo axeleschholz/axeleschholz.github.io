@@ -7,7 +7,7 @@ const Wrapper = styled.ul`
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #222;
+  background-color: ${(props) => props.theme.colors.black};
 `;
 
 const Option = styled.li`
@@ -18,7 +18,7 @@ const Option = styled.li`
   padding: 1em 1.3em;
   text-decoration: none;
   &:hover {
-    background-color: #555;
+    background-color: ${(props) => props.theme.colors.darkRed};
   }
 `;
 
@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <Wrapper>
       <Option>
-        <NavbarLink to={`/blog`}>Home</NavbarLink>
+        <NavbarLink to={`/home`}>Home</NavbarLink>
       </Option>
       <Option>
         <NavbarLink to={`/about`}>About</NavbarLink>
