@@ -7,10 +7,20 @@ const Wrapper = styled.ul`
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: ${(props) => props.theme.colors.black};
+  background-color: ${(props) => props.theme.colors.palette1};
 `;
 
+//eventually, change the default display to none
 const Option = styled.li`
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  ${(props) => props.theme.small(["display: block;"])};
+`;
+
+const NavbarLink = styled(Link)`
+  color: white;
   float: left;
   display: block;
   color: white;
@@ -18,16 +28,12 @@ const Option = styled.li`
   padding: 1em 1.3em;
   text-decoration: none;
   &:hover {
-    background-color: ${(props) => props.theme.colors.darkRed};
+    background-color: ${(props) => props.theme.colors.accent1};
   }
 `;
 
-const NavbarLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-`;
-
 function NavBar() {
+  //use a flexbox for this
   return (
     <Wrapper>
       <Option>
