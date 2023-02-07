@@ -12,16 +12,25 @@ function App() {
     grid-template-rows: 1fr auto;
   `;
 
+  const Wrapper = styled.div`
+    background-color: ${(props) => props.theme.colors.palette4};
+    width: 100%;
+    min-height: 100vh;
+  `;
+  const imgs = ["../../images/Axel.jpg", "../../images/placeholder.jpg"];
+
   return (
     <React.Fragment>
       <Router>
         <Divider>
           <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
+          <Wrapper>
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </Wrapper>
         </Divider>
       </Router>
     </React.Fragment>

@@ -7,7 +7,7 @@ const Wrapper = styled.ul`
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: ${(props) => props.theme.colors.palette1};
+  background-color: ${(props) => props.theme.colors.palette2};
 `;
 
 //eventually, change the default display to none

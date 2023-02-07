@@ -19,12 +19,14 @@ const darkRed = "#481620";
 const brown = "#54342B";
 const darkBrown = "#321F19";
 const lightBrown = "#704A2E";
-const palette1 = "#443742";
-const palette2 = "#846C5B";
-const palette3 = "#AB9687";
-const palette4 = "#E4DAC8";
+const palette1 = "#000000";
+const palette2 = "#181818";
+const palette3 = "#5A5A5A";
+const palette4 = "#A8A8A8";
 const palette5 = "#EEEEEE";
 const accent1 = "#828BC4";
+const font1 = "Lucida Handwriting";
+const font2 = "American Typewriter";
 
 /*
  * const ExampleStyledComponent = styled.div`
