@@ -1,12 +1,12 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import styled from 'styled-components';
-import { COLORS, FONTS } from '../utils/StyleConstants';
-import { getPostBySlug } from '../utils/markdownParser';
-import ReactMarkdown from 'react-markdown';
+import React from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components";
+import { COLORS, FONTS, SPACING } from "../utils/StyleConstants";
+import { getPostBySlug } from "../utils/markdownParser";
+import ReactMarkdown from "react-markdown";
 
 const Container = styled.div`
-  /* Customize container styles as needed */
+  margin: ${SPACING.medium};
 `;
 
 const Heading = styled.h2`

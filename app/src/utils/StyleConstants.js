@@ -1,17 +1,19 @@
 export const COLORS = {
-    primary: '#333',
-    secondary: '#555',
-    accent: '#ffcc00',
-    text: '#333',
-  };
+  primary: '#171414',
+  secondary: '#333',     
+  background: "#f5f5f5",
+  accent: '#7A88FF',
+  text: '#1E1E1E',         
+  graphic: '#4CAF50',
+};
   
-  export const FONTS = {
-    heading: 'Arial, sans-serif',
-    body: 'Verdana, sans-serif',
-  };
+export const FONTS = {
+  heading: 'Arial, sans-serif',
+  body: 'Verdana, sans-serif',
+};
   
-  export const SPACING = {
-    small: '10px',
-    medium: '20px',
-    large: '30px',
-  };
+export const SPACING = {
+  small: '0.5em',
+  medium: '1em',
+  large: '1.5em',
+};

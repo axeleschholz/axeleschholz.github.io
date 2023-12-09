@@ -10,7 +10,8 @@ export function getPostBySlug(slug) {
     throw new Error(`Post not found for slug: ${slug}`);
   }
 
-  const htmlContent = remark().use(remarkHTML).processSync(post.content).toString();
+  //if needed, use the following to render hthml version
+  //const htmlContent = remark().use(remarkHTML).processSync(post.content).toString();
 
   return {
     ...post,
@@ -20,6 +21,6 @@ export function getPostBySlug(slug) {
 export function getAllPosts() {
   return allPosts.map(({ content, ...rest }) => ({
     ...rest,
-    content: remark().use(remarkHTML).processSync(content).toString(),
+    //content: remark().use(remarkHTML).processSync(content).toString(),
   }));
 }
