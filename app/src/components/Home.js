@@ -2,6 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { COLORS, FONTS, SPACING } from "../utils/StyleConstants";
+import {
+  CardContainer,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "./card";
+import ReactMarkdown from "react-markdown";
 
 const PostsContainer = styled.div`
   padding: ${SPACING.medium};
@@ -16,6 +24,10 @@ const Li = styled.li`
   margin-bottom: ${SPACING.small};
 `;
 
+const WrapperLink = styled(Link)`
+  text-decoration: none;
+  color: ${COLORS.text};
+`;
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${COLORS.text};
@@ -42,13 +54,22 @@ const Home = ({ posts }) => {
         surprised with the results.
       </p>
       <h2>Computers & Society Journals</h2>
-      <Ul>
-        {posts.map((post) => (
-          <Li key={post.slug}>
-            <StyledLink to={`/blog/${post.slug}`}>{post.title}</StyledLink>
-          </Li>
-        ))}
-      </Ul>
+      <CardContainer>
+        {posts.map((post) => {
+          return (
+            <WrapperLink to={`/blog/${post.slug}`} key={post.slug}>
+              <Card key={post.slug}>
+                <CardHeader>
+                  <CardTitle>{post.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ReactMarkdown>{post.content}</ReactMarkdown>
+                </CardContent>
+              </Card>
+            </WrapperLink>
+          );
+        })}
+      </CardContainer>
     </PostsContainer>
   );
 };

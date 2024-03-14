@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 const App = () => {
   console.log("RENDERING APP");
   const allPosts = getAllPosts();
+  console.log(allPosts);
   return (
     <Router>
       <Wrapper>

@@ -1,9 +1,7 @@
 ---
-title: "Journal 4"
+title: "Technological and Ethical Impacts: Dive deep into the ethical challenges of the AI age, especially in terms of biased algorithms. How can developers ensure fairness and transparency in machine learning models?"
 author: "Axel Eschholz"
 ---
-
-### Technological and Ethical Impacts: Dive deep into the ethical challenges of the AI age, especially in terms of biased algorithms. How can developers ensure fairness and transparency in machine learning models?
 
 That is the million dollar question. As we discussed in class, an AI’s perspective on the world is entirely determined by its training data, much like a human’s perspective is determined by their life experience. However, presenting an AI with truly “unbiased” data, if that is even possible, is exceedingly difficult. This is because the entirety of human history and texts are biased in some way. For example, if you feed an AI western historical texts written over the last 100 years, it will undeniably develop the white colonial bias inherent in the overwhelming majority of the works. Similarly, if you train the AI on the last 5 years of Reddit and Twitter posts, it would become an unhinged reflection of the worst instincts of humanity. Thus the problem of eliminating bias in AI becomes the problem of curating an unbiased reflection of the world.
 

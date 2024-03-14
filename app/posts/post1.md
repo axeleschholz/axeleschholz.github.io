@@ -1,9 +1,7 @@
 ---
-title: "Journal 1"
+title: "Ethics In Tech: Considering that you might be a future tech professional, how will you prioritize privacy and ethical considerations in your work?"
 author: "Axel Eschholz"
 ---
-
-### Ethics In Tech: Considering that you might be a future tech professional, how will you prioritize privacy and ethical considerations in your work?
 
 As an aspiring leader in tech, there is often that feeling of selling one's soul for power, influence, etc.. I often try to justify it to myself by saying that it is for the right reasons. But, until I've delivered on that promise, those words ring hollow. As such, I find myself grappling with the vast ethical considerations of developing technology in the modern world. My current endeavor focuses around identity, and is theoretically the antithesis to the anonymity of the early internet age. While this could have potentially incredible benefits to trust accountability in an online world, there is no doubt that it flirts dangerously with currently held notions of privacy ethics. As such, it is imperative that we take this into consideration as we move forward with this project.
 

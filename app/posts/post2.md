@@ -1,9 +1,7 @@
 ---
-title: "Journal 2"
+title: "Real-world Implications: What lessons can startups and new companies take from today's LLL activity?"
 author: "Axel Eschholz"
 ---
-
-### Real-world Implications: What lessons can startups and new companies take from today's LLL activity?
 
 This activity, even in its most basic form, would be a suitable practice for every startup to adopt. Startup culture lends itself to haphazard, fast solutions, which are the antithesis of effective security. Furthermore, when one is inside a system it is often hard to see potential vulnerabilities. Reviewing a security policy from the lens of an objective observer trying to exploit it forces a reckoning with potential security flaws.
 
