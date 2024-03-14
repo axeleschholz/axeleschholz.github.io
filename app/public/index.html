@@ -9,6 +9,16 @@
 </head>
 
 <body style="margin:0px;padding:0px;">
+    <!--Script to handle redirection-->
+    <script type="text/javascript">
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect !== location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
     <div id="root"></div>
 </body>
 

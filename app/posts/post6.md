@@ -50,7 +50,3 @@ Najjar, M. S., & Kettinger, W. J. (2013). Data Monetization: Lessons from a Reta
 The Economist (2017, May 6). The World's Most Valuable Resource Is No Longer Oil, but Data. The Economist. [https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data)
 
 Wu, K. W., Huang, S. Y., Yen, D. C., & Popova, I. (2012). The effect of online privacy policy on consumer privacy concern and trust. Computers in human behavior, 28(3), 889-897. [https://doi.org/10.1016/j.chb.2011.12.008](https://doi.org/10.1016/j.chb.2011.12.008)
-
-Potential Sources:
-
-[https://www.cisco.com/c/dam/en_us/about/doing_business/trust-center/docs/cisco-consumer-privacy-survey-2022.pdf?CCID=cc000160&DTID=esootr000515&OID=wprsc030156](https://www.cisco.com/c/dam/en_us/about/doing_business/trust-center/docs/cisco-consumer-privacy-survey-2022.pdf?CCID=cc000160&DTID=esootr000515&OID=wprsc030156)
