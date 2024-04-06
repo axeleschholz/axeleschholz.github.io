@@ -39,9 +39,9 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Home = ({ posts }) => {
+const Home = () => {
   return (
-    <PostsContainer>
+    <div>
       <h2>About This Project</h2>
       <p>
         This is the inital bare bones of a personal portfolio website. It runs
@@ -53,24 +53,7 @@ const Home = ({ posts }) => {
         was my first experiment using ChatGPT to code and I was pleasently
         surprised with the results.
       </p>
-      <h2>Computers & Society Journals</h2>
-      <CardContainer>
-        {posts.map((post) => {
-          return (
-            <WrapperLink to={`/blog/${post.slug}`} key={post.slug}>
-              <Card key={post.slug}>
-                <CardHeader>
-                  <CardTitle>{post.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ReactMarkdown>{post.content}</ReactMarkdown>
-                </CardContent>
-              </Card>
-            </WrapperLink>
-          );
-        })}
-      </CardContainer>
-    </PostsContainer>
+    </div>
   );
 };
 

@@ -7,6 +7,7 @@ import BlogPost from "./components/BlogPost";
 import { getAllPosts } from "./utils/markdownParser";
 import styled from "styled-components";
 import { COLORS } from "./utils/StyleConstants";
+import Blog from "./components/Blog";
 
 const Wrapper = styled.div`
   background-color: ${COLORS.background};
@@ -22,15 +23,17 @@ const App = () => {
   return (
     <Router>
       <Wrapper>
-        <Navbar />
         <Switch>
           <Route path="/" exact>
-            <Home posts={allPosts} />
+            <ResumePage />
           </Route>
           <Route path="/about" exact>
             <ResumePage />
           </Route>
-          <Route path="/blog/:postId" component={BlogPost} />
+          <Route path="/blog" exact>
+            <Blog posts={allPosts} />
+          </Route>
+          <Route path="/post/:postId" component={BlogPost} />
         </Switch>
       </Wrapper>
     </Router>
